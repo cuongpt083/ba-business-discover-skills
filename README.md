@@ -1,5 +1,20 @@
 # Skill to research a new business domain for Business Analyst
 
+## 📦 Install and Use
+
+### OpenSkills
+1. Install from the packaged zip:
+   - `openskills install dist/business-domain-handbook.zip`
+2. Verify the skill is available:
+   - `openskills list`
+
+### Claude Code / OpenCode / Agentic Tools
+- Copy the skill folder to your skills path:
+  - `.claude/skills/business-domain-handbook`
+- Restart the agent so it loads new skills.
+- Trigger with a request like:
+  - "Create a Business Analyst handbook for the Vietnam retail domain."
+
 ##🎯 Goal After 7 Days
 
 You should be able to:
