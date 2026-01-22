@@ -1,0 +1,26 @@
+{
+  "course_name": "Business Analysis for Smart Retail",
+  "total_chapters": 3,
+  "processed_chapters": [
+    {
+      "number": 1,
+      "title": "Business Analyst là gì?",
+      "variables_file": "batch_output/chapter_1_variables.md",
+      "status": "ready"
+    },
+    {
+      "number": 2,
+      "title": "Hiểu khách hàng của bạn",
+      "variables_file": "batch_output/chapter_2_variables.md",
+      "status": "ready"
+    },
+    {
+      "number": 3,
+      "title": "Thu thập và phân tích dữ liệu",
+      "variables_file": "batch_output/chapter_3_variables.md",
+      "status": "ready"
+    }
+  ],
+  "output_directory": "batch_output",
+  "timestamp": "2026-01-23T00:23:20.235631"
+}
