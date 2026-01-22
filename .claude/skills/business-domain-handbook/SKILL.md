@@ -23,6 +23,7 @@ description: This skill should be used when creating a Senior Business Analyst h
 - File name: `Research_[domain]_v[major].[minor].[yyyyddMM].md`
 - Length target: 5 to 20 Word pages when converted.
 - Template: `references/handbook-template.md`
+- Visuals: Must include Mermaid.js diagrams for Context, Workflows, and System Landscape.
 
 ## Data Sources (Priority Order)
 1. Legal and regulatory documents
@@ -42,14 +43,22 @@ description: This skill should be used when creating a Senior Business Analyst h
 - Label inference explicitly as "Inference" with a short rationale.
 - Convert unknowns into open questions in the Appendix.
 
-## 7-Stage Workflow (Mapped to Sections)
+## Visual Standards
+- Use Mermaid.js syntax for all diagrams.
+- Context Diagram (Section 3): Use `graph TD` to show entities.
+- Workflow (Section 5): Use `sequenceDiagram` for O2O flows.
+- System Landscape (Section 8): Use `graph LR` to show integrations.
+- Keep diagrams simple; avoid complex styling that breaks rendering.
+
+## 8-Stage Workflow (Mapped to Sections)
 1. Domain Foundation: Sections 1–2
 2. Stakeholders & Success: Sections 3–4
 3. Work & Roles: Sections 5–6
 4. Data & Systems: Sections 7–8
 5. Issues & Causes: Sections 9–10
 6. Opportunities & Synthesis: Sections 11–12
-7. Finalization: Section 13
+7. Refinement (Visuals & Regulations): Section 13 & Diagrams
+8. Finalization: Section 14 & 15
 
 ## Quality Gates
 - Verify each stage against checklist-style quality gates in `docs/research-plan.md`.

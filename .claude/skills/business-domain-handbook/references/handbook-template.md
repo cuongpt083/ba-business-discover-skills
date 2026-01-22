@@ -13,8 +13,9 @@
 10. Root Cause Analysis
 11. Opportunities and Solution Directions
 12. Current State Synthesis
-13. Domain Handbook Finalization
-14. Appendix
+13. Regulatory and Compliance Constraints
+14. Domain Handbook Finalization
+15. Appendix
 
 ## 1. Domain Overview and Purpose
 - Domain definition
@@ -31,6 +32,7 @@
 
 ## 3. Stakeholders and Ecosystem
 - Stakeholder map table: Stakeholder | Role | Goals | Pain Points | Influence Level
+- [Mermaid Context Diagram]: `graph TD` showing Shopper, Retailer, Suppliers, Logistics, Regulators.
 
 ## 4. Business Goals and Success Metrics
 - Goals and metrics matrix: Goal | Metric | Owner | Current State | Target
@@ -39,6 +41,7 @@
 - Level 0 end-to-end map summary
 - Level 1 subprocess summaries
 - Variations and exceptions
+- [Mermaid Sequence Diagram]: `sequenceDiagram` showing key customer journey (e.g., O2O flow).
 
 ## 6. Roles and Responsibilities
 - RACI table: Activity | Responsible | Accountable | Consulted | Informed
@@ -48,6 +51,7 @@
 
 ## 8. Systems and Tools Landscape
 - Systems table: System | Purpose | Users | Integrations | Pain Points
+- [Mermaid System Landscape Diagram]: `graph LR` showing integration between POS, ERP, CRM, and External systems.
 
 ## 9. Pain Points and Strengths
 - Pain point log: Pain Point | Affected Users | Impact | Frequency | Root Cause Hypothesis
@@ -64,13 +68,17 @@
 - Top problems and constraints
 - Improvement themes
 
-## 13. Domain Handbook Finalization
+## 13. Regulatory and Compliance Constraints
+- Regulation table: Regulation Type | Key Concern | Impact on System/Workflow
+- Focus on: Food Safety, E-commerce laws, Tax (e-Invoice), Fire Safety.
+
+## 14. Domain Handbook Finalization
 - Completion checklist
 - Link to diagrams
 - Glossary consistency check
 - Open questions list
 
-## 14. Appendix
+## 15. Appendix
 - Sources list (with citations)
 - Geography scope used
 - Assumptions (numbered, referenced from body)
