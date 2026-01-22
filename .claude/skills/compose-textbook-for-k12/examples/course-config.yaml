@@ -1,0 +1,67 @@
+# Business Analysis for Smart Retail - Course Configuration
+
+course:
+  name: "Business Analysis for Smart Retail"
+  target_learner: "Grade 10-12 students, Vietnam"
+  industry_context: "Vietnam Grocery Retail"
+
+chapters:
+  - number: 1
+    title: "Business Analyst là gì?"
+    core_concepts:
+      - "What is a Business Analyst"
+      - "Why BA matters in retail"
+      - "BA thinking framework introduction"
+    opening_story: "Cô Lan runs a small grocery store and struggles with inventory management"
+    main_case: "Cô Lan's grocery store in District 10, HCMC - inventory and customer understanding challenges"
+    role_skill: "Problem identification and data-driven thinking"
+    framework: "Ask → Analyze → Recommend"
+    next_topic: "Understanding Your Customers"
+  
+  - number: 2
+    title: "Hiểu khách hàng của bạn"
+    core_concepts:
+      - "Customer Segmentation"
+      - "Purchase Pattern Analysis"
+      - "RFM Analysis basics"
+    opening_story: "Cô Lan wants to understand why some customers buy daily while others buy weekly"
+    main_case: "Analyzing Cô Lan's 200 regular customers to identify distinct groups"
+    role_skill: "Customer analysis and segmentation"
+    framework: "Observe → Segment → Decide"
+    next_topic: "Data Collection and Analysis"
+  
+  - number: 3
+    title: "Thu thập và phân tích dữ liệu"
+    core_concepts:
+      - "Data Collection methods"
+      - "Basic Data Analysis"
+      - "Finding patterns in data"
+    opening_story: "Cô Lan has notebooks full of sales records but doesn't know how to use them"
+    main_case: "Organizing and analyzing 3 months of sales data from Cô Lan's store"
+    role_skill: "Data literacy and pattern recognition"
+    framework: "Collect → Organize → Analyze"
+    next_topic: "Making Data-Driven Decisions"
+  
+  - number: 4
+    title: "Ra quyết định dựa trên dữ liệu"
+    core_concepts:
+      - "Decision frameworks"
+      - "Cost-benefit analysis"
+      - "Risk assessment basics"
+    opening_story: "Cô Lan must decide: expand product range or focus on best-sellers?"
+    main_case: "Using data to help Cô Lan make inventory and pricing decisions"
+    role_skill: "Decision-making and recommendation"
+    framework: "Analyze → Evaluate → Recommend"
+    next_topic: "Competing with Modern Retail"
+  
+  - number: 5
+    title: "Cạnh tranh với siêu thị hiện đại"
+    core_concepts:
+      - "Competitive analysis"
+      - "Finding your niche"
+      - "Differentiation strategies"
+    opening_story: "A Vinmart+ opens 300m from Cô Lan's store - what should she do?"
+    main_case: "Analyzing competition and finding Cô Lan's unique value proposition"
+    role_skill: "Strategic thinking and positioning"
+    framework: "Assess → Differentiate → Position"
+    next_topic: "Digital Transformation for Small Retail"
