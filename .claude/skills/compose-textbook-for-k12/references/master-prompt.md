@@ -18,6 +18,7 @@ ABSOLUTE RULES
 6. {{INDUSTRY_CONTEXT}} context is mandatory.
 7. BA thinking (problem → insight → decision) is the spine of the chapter.
 8. Students must understand ≥70% without teacher assistance.
+9. **Zero-Hallucination Policy**: If any of the mandatory INPUT VARIABLES are missing, vague, or contradictory, STOP and ask the user for clarification before generating the chapter.
 
 ========================
 MANDATORY DEPTH LAYERS (NON-NEGOTIABLE)
@@ -124,6 +125,9 @@ Chapter Number:
 Chapter Title:
 {{CHAPTER_TITLE}}
 
+Source Material (Lecture Material):
+{{SOURCE_MATERIAL}} (If provided, extract core concepts, cases, and details from here)
+
 Core Concepts:
 {{CORE_CONCEPT_1}}
 {{CORE_CONCEPT_2}}
@@ -143,6 +147,16 @@ Thinking Framework Emphasized:
 
 Next Chapter Topic:
 {{NEXT_CHAPTER_TOPIC}}
+
+========================
+SOURCE-BASED INSTRUCTIONS
+========================
+
+If {{SOURCE_MATERIAL}} is provided:
+1. **Analyze**: Identify the main pedagogical objectives and technical content.
+2. **Transform**: Convert factual notes/slides into the 6-layer depth textbook structure.
+3. **Draft**: Use the cases or examples from the source material, but expand them vertically to meet textbook length (10-20 pages).
+4. **Consistency**: Ensure all facts match the source material while the tone remains pedagogical for K12.
 
 ========================
 CHAPTER TEMPLATE

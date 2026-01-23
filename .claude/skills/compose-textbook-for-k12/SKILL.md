@@ -40,7 +40,50 @@ The skill enforces:
 - Short-form content (< 20 pages)
 - Content targeting university level or professional audiences
 
-## How to Use This Skill
+## ⚡ Quick Triggering (Agent Autonomy)
+
+You can trigger this skill using simple natural language prompts. The agent is trained to take initiative and minimize user friction.
+
+### Simple Prompts
+- *"Viết Chương 2 về Phân tích dữ liệu khách hàng cho học sinh lớp 11."*
+- *"Tạo một chương sách giáo khoa về kỹ năng đặt câu hỏi trong BA retail."*
+- *"Write Chapter 5 on Competition Analysis for K12 retail students."*
+
+### Agent Autonomous Workflow
+When a simple prompt or source material is detected, the agent MUST:
+1. **Context Analysis**: Identify the chapter number, title, and core concepts.
+2. **Variable Extraction**: Attempt to extract all variables defined in `references/master-prompt.md`.
+3. **Gap Filling (STRICT)**: 
+   - Before generating content, the agent MUST list the variables it has found and identify any **missing mandatory fields** (especially `CORE_CONCEPTS`, `MAIN_CASE`, and `THINKING_FRAMEWORK`).
+   - If critical information is missing, the agent **MUST NOT** hallucinate or proceed with generic content. Instead, it must present a clean list of missing information and ask the user to provide it.
+4. **User Confirmation**: For complex chapters, the agent should present its proposed outline/variables to the user and say: *"I have gathered the following context. Is this correct or should I adjust anything before I write the 10-20 page chapter?"*
+5. **Execution**: Only after all gaps are filled and/or the user confirms, automatically load `references/master-prompt.md` and `references/chapter-template.md` to generate the final chapter.
+
+## 📄 Source-Based One-Shot Generation
+
+This skill is designed to transform existing lecture materials (slides, notes, documents) into high-quality textbook chapters with minimal user interaction.
+
+### How it works:
+1. **Input**: Provide a file or paste content (e.g., @"Lecture_Notes.docx").
+2. **One-Shot Trigger**: *"Dựa trên tài liệu này, hãy viết Chương 3 cho sách giáo khoa K12."*
+3. **Agent Action**:
+   - The agent reads the source material.
+   - It extracts the technical core and existing examples.
+   - It automatically maps these to the **6 mandatory depth layers**.
+   - It fills all variables in `master-prompt.md` using the source data.
+   - It executes the full generation and self-review process in one pass.
+
+### Benefits:
+- **Zero Configuration**: No need to manually run variable extraction scripts.
+- **Fact Accuracy**: Higher alignment with your specific curriculum.
+- **Speed**: Go from raw notes to a 10-page chapter in minutes.
+
+## How to Use This Skill (For Humans & Agents)
+
+> [!NOTE]
+> **For AI Agents**: You do NOT need to ask the user to run scripts manually. If you are an agent reading this, follow the **Quick Triggering** workflow described above to gather variables, infer defaults, and execute the generation autonomously.
+> 
+> **For Humans**: Follow the steps below to prepare your chapter manually using the provided tools.
 
 ### Step 1: Gather Input Variables
 

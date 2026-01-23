@@ -1,112 +1,87 @@
-# Skill to research a new business domain for Business Analyst
+# BA Business Discover Skills
 
-## 📦 Install and Use
+A collection of OpenSkills designed for Business Analysts to research domains and author educational content.
 
-### OpenSkills
-1. Install from the packaged zip:
-   - `openskills install dist/business-domain-handbook.zip`
-2. Verify the skill is available:
-   - `openskills list`
+## 🛠️ Available Skills
 
-### Claude Code / OpenCode / Agentic Tools
-- Copy the skill folder to your skills path:
-  - `.claude/skills/business-domain-handbook`
-- Restart the agent so it loads new skills.
-- Trigger with a request like:
-  - "Create a Business Analyst handbook for the Vietnam retail domain."
+### 1. `compose-textbook-for-k12` ⭐ NEW
+Comprehensive textbook chapter authoring system for K12 education with pedagogical depth, Vietnam retail context, and Business Analyst thinking framework.
 
-##🎯 Goal After 7 Days
+#### 📦 Installation
+```bash
+# Clone the repository and move to skills folder
+# (Already available in .claude/skills/ if you cloned this repo)
+npx openskills read compose-textbook-for-k12
+```
 
-You should be able to:
+#### 🚀 Quick Start
+1. **Initialize Variables**: Use the interactive script to collect chapter details.
+   ```bash
+   python3 .claude/skills/compose-textbook-for-k12/scripts/extract_variables.py
+   ```
+2. **Generate Outline**: Create a structured outline with 6 depth layers.
+   ```bash
+   python3 .claude/skills/compose-textbook-for-k12/scripts/generate_outline.py chapter_variables.md
+   ```
+3. **Generate Content**: Load the skill and use the Master Prompt.
+   - Trigger: *"Dựa trên dàn ý này, hãy viết nội dung Chương 01 theo chuẩn K12."*
+4. **Validate & Analyze**:
+   ```bash
+   python3 .claude/skills/compose-textbook-for-k12/scripts/chapter_stats.py output/chapter_01.md --detailed
+   ```
 
-* Explain the domain clearly to a non-expert
-
-* Describe the current landscape & ecosystem
-
-* Map end-to-end workflows
-
-* Identify pain points, constraints, and strengths
-
-* Speak the language of stakeholders
-
-* Propose realistic, tailored solution directions
-
-Not “know everything”, but know what matters.
+#### 📄 One-Shot (Lecture Material to Chapter)
+You can directly transform notes or slides into a chapter:
+- **Trigger**: Gửi file tài liệu và yêu cầu: *"Dựa trên tài liệu này, hãy viết Chương 2 sách giáo khoa K12 về [Chủ đề]."*
+- **Action**: Agent sẽ tự động trích xuất nội dung, ánh xạ vào **6 depth layers** và viết toàn bộ chương mà không cần bạn phải nhập biến số thủ công.
 
 ---
 
-## 🧠 Core Principle (Very Important)
+### 2. `business-domain-handbook`
+Skill to research a new business domain specifically for Business Analysts. Use this to create domain-specific knowledge bases quickly.
 
-You are not learning a domain to become a specialist.
-You are learning it to find problems and improve outcomes.
+#### 📦 Installation
+```bash
+# Install from the packaged zip
+npx openskills install dist/business-domain-handbook.zip
+```
 
-This procedure focuses on decision-useful knowledge, not trivia.
+#### 🚀 Quick Start
+- Trigger with a request like:
+  - *"Create a Business Analyst handbook for the Vietnam retail domain."*
 
-### 🧩 Master Framework (Use This Every Time)
-1. Domain Decomposition Framework
+---
 
+## 🏗️ Project Structure
+
+- `.claude/skills/`: Contains the actual skill implementation (SKILL.md, references, scripts).
+- `dist/`: Packaged `.tar.gz` and `.zip` files for distribution.
+- `docs/`: Master prompts and development documentation.
+
+## 🧠 Core Principles
+
+### 1. Depth & Pedagogy (for K12)
+Every learning concept must follow the **6 Mandatory Depth Layers**:
+1. Intuitive Explanation
+2. Common Misunderstanding
+3. Small Concrete Example (Vietnam context)
+4. Extended Mini-Case
+5. Decision-Making Relevance
+6. Reflective Question
+
+### 2. Domain Decomposition (for BA)
 Break any domain into these 6 lenses:
+- Business Goals & Value
+- Stakeholders & Users
+- Core Workflows
+- Information & Data
+- Systems & Tools
+- Pain Points & Constraints
 
-* Business Goals & Value
+## 🚀 Pushing for Excellence
+- **Textbook Quality**: We aim for 10-20 pages of depth, not just summaries.
+- **Decision-Useful Knowledge**: We don't just "study", we hunt answers to high-value questions.
+- **K12 Accessibility**: Complex concepts must be explainable to a 10th grader.
 
-* Stakeholders & Users
-
-* Core Workflows
-
-* Information & Data
-
-Systems & Tools
-
-Pain Points & Constraints
-
-Everything you research must map to one of these.
-
-2. Question-Driven Learning (Critical Skill)
-
-You do NOT “study”.
-You hunt answers to high-value questions.
-
-Example:
-
-❌ “What is X industry?”
-
-✅ “How does X industry make money, and where does it lose money?”
-
-🧠 Professional BA Mental Models (Memorize These)
-1. Systems Thinking
-
-A problem is rarely local. Fixing one area breaks another.
-
-2. Incentive Awareness
-
-People optimize for what they are measured on.
-
-3. Constraint-First Thinking
-
-The best solution inside constraints beats the perfect one outside.
-
-4. Language Mastery
-
-If you use the domain’s language, stakeholders trust you faster.
-
-📌 Tools You Should Use
-
-Miro / FigJam → workflows & maps
-
-Notion / Confluence → domain wiki
-
-Excel → pain point tracking
-
-PowerPoint → synthesis
-
-🚀 How You Know You’re “Good Enough”
-
-You can:
-
-Explain the domain to a new joiner in 10 minutes
-
-Ask better questions than juniors
-
-Predict stakeholder objections
-
-Suggest improvements without sounding naive
+---
+*Created by the Business Discover team.*
